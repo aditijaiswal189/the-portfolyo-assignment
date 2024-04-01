@@ -3,13 +3,13 @@
 import SectionHeading from "../Utils/SectionHeading";
 import SwiperServices from "../Utils/SwiperServices";
 
-function Services({ children }) {
+function Services({ servicesData }) {
   return (
-    <div className="w-[80%] m-auto pb-10">
+    <div className="w-[80%] m-auto pb-10 pt-[90px]" id="services">
       <div className="pb-10">
-        <SectionHeading>WHAT I DO </SectionHeading>
+        <SectionHeading>SERVICES</SectionHeading>
       </div>
-      <SwiperServices />
+      <SwiperServices servicesData={servicesData} />
     </div>
   );
 }

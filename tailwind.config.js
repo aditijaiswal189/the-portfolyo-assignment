@@ -2,6 +2,10 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      mobile: "375px",
+      bigMob: "500px",
+    },
     extend: {},
   },
   plugins: [],

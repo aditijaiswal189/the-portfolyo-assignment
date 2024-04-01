@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import TestimonialSlide from "./TestimonialSlide";
-import { testimonials } from "./data";
 
-function SwiperTestimonials() {
+function SwiperTestimonials({ testimonialsData }) {
   return (
     <div>
       <swiper-container
@@ -14,7 +14,7 @@ function SwiperTestimonials() {
         autoplay-delay="2500"
         autoplay-disable-on-interaction="false"
       >
-        {testimonials.map((test) => (
+        {testimonialsData?.map((test) => (
           <>
             <swiper-slide>
               <TestimonialSlide

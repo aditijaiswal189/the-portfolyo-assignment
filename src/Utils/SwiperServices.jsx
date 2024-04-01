@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import ServicesSlide from "./ServicesSlide";
-import { services } from "./data";
 
-function SwiperServices() {
+function SwiperServices({ servicesData }) {
   return (
     <div>
       <swiper-container
@@ -14,7 +14,7 @@ function SwiperServices() {
         autoplay-delay="2500"
         autoplay-disable-on-interaction="false"
       >
-        {services.map((ser) => (
+        {servicesData?.map((ser) => (
           <>
             <swiper-slide>
               <ServicesSlide
